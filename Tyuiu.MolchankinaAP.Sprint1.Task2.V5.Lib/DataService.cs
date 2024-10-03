@@ -5,7 +5,8 @@ namespace Tyuiu.MolchankinaAP.Sprint1.Task2.V5.Lib
     {
         public int CalculateSideSquare(int value)
         {
-            return value * value;
+            int y = 6;
+            return (value * value)* y;
         }
     }
 }
