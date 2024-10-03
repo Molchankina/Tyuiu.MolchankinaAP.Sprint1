@@ -22,7 +22,7 @@ namespace Tyuiu.MolchankinaAP.Sprint1.Task2.V5
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
             int x;
-            Console.WriteLine("Введите значение x:");
+            Console.WriteLine("Длина стороны куба");
             x = Convert.ToInt32(Console.ReadLine());
             int y;
             y = Convert.ToInt32(6);
