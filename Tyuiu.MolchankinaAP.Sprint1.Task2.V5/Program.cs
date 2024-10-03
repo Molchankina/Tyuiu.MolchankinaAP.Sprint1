@@ -9,9 +9,10 @@ namespace Tyuiu.MolchankinaAP.Sprint1.Task2.V5
             Console.Title = "Спринт #1 | Выполнила: Молчанкина А. П. | СМАРТб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #15                                                             *");
+            Console.WriteLine("* Тема: Известна длина стороны куба. Вычислить площадь боковой поверхности*");
+            Console.WriteLine("* куба.                                                                   *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #5                                                              *");
             Console.WriteLine("* Выполнила: Молчанкина Ангелина Павловна | СМАРТб-24-1                   *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
