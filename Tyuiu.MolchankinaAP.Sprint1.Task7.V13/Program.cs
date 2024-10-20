@@ -5,6 +5,7 @@ namespace Tyuiu.MolchankinaAP.Sprint1.Task7.V13
     {
         static void Main(string[] args)
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
             DataService ds = new DataService();
             Console.Title = "Спринт #1 | Выполнила: Молчанкина А. П. | СМАРТб-24-1";
             Console.WriteLine("***************************************************************************");
@@ -24,16 +25,15 @@ namespace Tyuiu.MolchankinaAP.Sprint1.Task7.V13
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            int x;
-            Console.WriteLine("Переменная x:");
-            x = Convert.ToInt32(Console.ReadLine());
-            int y;
-            Console.WriteLine("Переменная y:");
-            y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите значение x:");
+            double x = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите значение y:");
+            double y = double.Parse(Console.ReadLine());
+            bool isInShadedArea = ds.CheckDotInShadedArea(x, y);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("z = (y^2 - cos x^2 + 10)/(x^2 - sin y^2 + 12)" + ds.CheckDotInShadedArea(x, y));
+            Console.WriteLine($"({y}^2 - cos {x}^2 + 10)/({x}^2 - sin {y}^2 + 12) = {isInShadedArea}");
             Console.ReadKey();
         }
     }
